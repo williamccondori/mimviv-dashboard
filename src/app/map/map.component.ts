@@ -6,6 +6,12 @@ import * as esri from 'esri-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { QueryService } from '../query.service';
 
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: 'assets/leaflet/marker-icon-2x.png',
+  iconUrl: 'assets/leaflet/marker-icon.png',
+  shadowUrl: 'assets/leaflet/marker-shadow.png'
+});
+
 @Component({
   selector: 'app-map',
   imports: [],
