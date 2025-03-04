@@ -1,0 +1,190 @@
+<div class="grid h-screen grid-rows-[auto_1fr]">
+  <header class="flex flex-col md:flex-row items-center bg-gray-800 text-white p-4 gap-4">
+    <span class="text-2xl font-bold w-full md:w-3/12">
+      Maquinarias
+    </span>
+    <app-filter class="w-full md:w-9/12"></app-filter>
+  </header>
+  <div class="p-4 bg-gray-900 text-white grid grid-cols-[0.5fr_2fr_1fr] gap-4 h-full">
+    <div class="grid grid-rows-2 gap-4">
+      <div
+        class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center justify-center text-center w-full max-w-sm">
+        <div class="text-yellow-400 text-sm">
+          Última Actualización
+        </div>
+        <div class="text-gray-300 text-xs">
+          Septiembre - 2024
+        </div>
+        <div class="flex items-center justify-center mt-4">
+          <img src="https://i.postimg.cc/nzVYdSFx/demoledor.png"
+               alt="Globo"
+               class="w-16 h-16 mr-2 object-contain">
+          <div class="text-green-500 text-4xl font-bold break-words max-w-[120px]">
+            1200
+          </div>
+        </div>
+        <div class="text-white text-lg font-semibold mt-4">
+          N° DE MAQUINARIAS
+        </div>
+        <div class="flex justify-center space-x-4 text-sm mt-2">
+          <span class="text-green-500">12 ACTIVAS</span>
+          <span class="text-red-500">3 INACTIVAS</span>
+        </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+        <h1 class="mb-3 font-bold text-lg">Filtros</h1>
+        <form class="space-y-4">
+          <!-- Primer campo: Select -->
+          <div>
+            <label for="campo1"
+                   class="block text-sm font-bold text-gray-300">Programa:</label>
+            <select id="campo1"
+                    name="campo1"
+                    class="mt-1 block w-full p-2 bg-gray-700 border border-gray-500 rounded-md text-gray-200 focus:ring-indigo-500 focus:border-indigo-500">
+              <option value="">Seleccione</option>
+              <option value="DPPVU">DPPVU</option>
+              <option value="PNVR">PNVR</option>
+              <option value="PNC">PNC</option>
+            </select>
+          </div>
+
+          <!-- Segundo campo: Select -->
+          <div>
+            <label for="campo2"
+                   class="block text-sm font-bold text-gray-300">Intervenciones:</label>
+            <select id="campo2"
+                    name="campo2"
+                    class="mt-1 block w-full p-2 bg-gray-700 border border-gray-500 rounded-md text-gray-200 focus:ring-indigo-500 focus:border-indigo-500">
+              <option value="">Seleccione</option>
+              <option value="BFH">BFH</option>
+              <option value="BAE">BAE</option>
+              <option value="MTV">MTV</option>
+            </select>
+          </div>
+
+          <!-- Tercer campo: Select -->
+          <!-- <div>
+            <label for="campo3" class="block text-sm font-bold text-gray-300">Estado</label>
+            <select id="campo3" name="campo3" class="mt-1 block w-full p-2 bg-gray-700 border border-gray-500 rounded-md text-gray-200 focus:ring-indigo-500 focus:border-indigo-500">
+              <option value="">Seleccione</option>
+              <option value="opcion1">Opción 1</option>
+              <option value="opcion2">Opción 2</option>
+              <option value="opcion3">Opción 3</option>
+            </select>
+          </div> -->
+
+          <!-- Cuarto campo: Select -->
+          <div>
+            <label for="campo4"
+                   class="block text-sm font-bold text-gray-300">Estado</label>
+            <select id="campo4"
+                    name="campo4"
+                    class="mt-1 block w-full p-2 bg-gray-600 border border-gray-500 rounded-md text-gray-200 focus:ring-indigo-500 focus:border-indigo-500">
+              <option value="">Seleccione</option>
+              <option value="1">Activos</option>
+              <option value="0">Inactivos</option>
+            </select>
+          </div>
+
+          <!-- Botón de enviar -->
+          <div>
+            <button type="submit"
+                    class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Filtrar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="grid grid-rows-6 gap-4">
+      <div class="bg-gray-800 p-4 rounded grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Card 1: Población Penitenciaria -->
+        <div class="bg-cyan-500 p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center">
+          <div class="text-white text-sm font-semibold">
+            TOTAL
+          </div>
+          <img src="https://i.postimg.cc/15zwV7Mh/excavador.png"
+               alt="image"
+               class="w-16 h-16 mt-2  invert">
+          <div class="text-3xl font-bold text-white mt-2">
+            1200
+          </div>
+        </div>
+
+        <!-- Card 2: Capacidad de Albergue -->
+        <div class="bg-teal-500 p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center">
+          <div class="text-white text-sm font-semibold">
+            DPPVU
+          </div>
+          <img src="https://i.postimg.cc/15zwV7Mh/excavador.png"
+               alt="image"
+               class="w-16 h-16 mt-2  invert">
+          <div class="text-3xl font-bold text-white mt-2">
+            300
+          </div>
+        </div>
+
+        <!-- Card 3: Procesados -->
+        <div class="bg-indigo-500 p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center">
+          <div class="text-white text-sm font-semibold">
+            PNVR
+          </div>
+          <img src="https://i.postimg.cc/15zwV7Mh/excavador.png"
+               alt="image"
+               class="w-16 h-16 mt-2  invert">
+          <div class="text-3xl font-bold text-white mt-2">
+            200
+          </div>
+        </div>
+
+        <!-- Card 4: Sentenciados -->
+        <div class="bg-orange-500 p-6 rounded-lg shadow-lg text-center flex flex-col items-center justify-center">
+          <div class="text-white text-sm font-semibold">
+            PNC
+          </div>
+          <img src="https://i.postimg.cc/15zwV7Mh/excavador.png"
+               alt="image"
+               class="w-16 h-16 mt-2  invert">
+          <div class="text-3xl font-bold text-white mt-2">
+            100
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+        <div class="flex flex-col md:flex-row gap-4 p-4">
+          <!-- Gráfico de Barras (2/3) -->
+          <div class="md:w-2/3 w-full bg-white p-4 shadow-lg rounded-lg">
+            <apx-chart
+              [series]="barChart.series"
+              [chart]="barChart.chart"
+              [xaxis]="barChart.xaxis"
+              [colors]="barChart.colors"
+              [title]="barChart.title">
+            </apx-chart>
+          </div>
+
+          <!-- Gráfico de Dona (1/3) -->
+          <div class="md:w-1/3 w-full bg-white p-4 shadow-lg rounded-lg">
+            <apx-chart
+              [series]="donutChart.series"
+              [chart]="donutChart.chart"
+              [labels]="donutChart.labels"
+              [colors]="donutChart.colors"
+              [title]="donutChart.title">
+            </apx-chart>
+          </div>
+        </div>
+
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+
+      </div>
+      <div class="bg-gray-800 p-4 rounded">Item 4</div>
+      <div class="bg-gray-800 p-4 rounded">Item 5</div>
+      <div class="bg-gray-800 p-4 rounded">Item 6</div>
+    </div>
+    <div class="bg-green-600 rounded">
+      <app-map></app-map>
+    </div>
+  </div>
+</div>
