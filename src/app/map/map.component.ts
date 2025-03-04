@@ -3,7 +3,6 @@ import * as L from 'leaflet';
 
 import * as esri from 'esri-leaflet';
 
-import 'leaflet/dist/leaflet.css';
 import { QueryService } from '../query.service';
 
 L.Icon.Default.mergeOptions({
